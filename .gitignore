@@ -1,0 +1,10 @@
+input.csv
+output_DT.csv
+output.csv
+TraData.csv
+output.zip
+clf1_DTree.pickle
+clf1.pickle
+clf2_RForest.pickle
+clf3_NNeighbors.pickle
+clf4_NNetwork.pickle
