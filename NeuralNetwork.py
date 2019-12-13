@@ -20,7 +20,7 @@ starttime = time.time()
 clf4 = MLPClassifier(activation='relu',
                      solver='sgd',
                      max_iter=1000,
-                     hidden_layer_sizes=(100,),#best: 50, 50?
+                     hidden_layer_sizes=(25, 10),#best: 50, 50?
                      random_state=None)
 clf4 = clf4.fit(train_x, train_y)
 
