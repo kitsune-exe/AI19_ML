@@ -8,3 +8,4 @@ clf1.pickle
 clf2_RForest.pickle
 clf3_NNeighbors.pickle
 clf4_NNetwork.pickle
+inupt.csv
