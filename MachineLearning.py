@@ -11,14 +11,14 @@ x = theDataset[:, 1:]
 y = theDataset[:, 0]
 
 train_x, valid_x, train_y, valid_y = train_test_split(
-    x, y, test_size=0.75)
+    x, y, test_size=0.05)
 #print(x, train_x, valid_x)
 
 print('********************')
 print('* By Decision Tree *')
 print('********************')
 starttime = time.time()
-clf1 = tree.DecisionTreeClassifier(criterion='entropy', max_depth=10)
+clf1 = tree.DecisionTreeClassifier(criterion='entropy', max_depth=12)
 clf1 = clf1.fit(train_x, train_y)
 print('Training Accuracy:\n', clf1.score(train_x, train_y))
 print('Training data prediction:\n', clf1.predict(train_x))

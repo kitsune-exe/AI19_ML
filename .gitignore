@@ -9,3 +9,4 @@ clf2_RForest.pickle
 clf3_NNeighbors.pickle
 clf4_NNetwork.pickle
 inupt.csv
+.ipynb_checkpoints/test_on_data-checkpoint.ipynb

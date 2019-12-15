@@ -12,7 +12,7 @@ x = theDataset[:, 1:]
 y = theDataset[:, 0]
 
 train_x, valid_x, train_y, valid_y = train_test_split(
-    x, y, test_size=0.1)
+    x, y, test_size=0.25)
 print('*********************')
 print('* By Neural Network *')
 print('*********************')
@@ -20,7 +20,7 @@ starttime = time.time()
 clf4 = MLPClassifier(activation='relu',
                      solver='adam', #adam, 39, 39, 74.4
                      max_iter=1000,
-                     hidden_layer_sizes=(100, 100),#best: 50, 50?
+                     hidden_layer_sizes=(39, 39, 39),#best: 50, 50?
                      random_state=None)
 clf4 = clf4.fit(train_x, train_y)
 
